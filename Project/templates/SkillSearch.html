@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>StackSearch</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/sign.css') }}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin" method="post" action="/process">
+        <datalist id = "datalist1">
+            <option value="Python">
+            <option value="Java">
+            <option value="JavaScript">
+            <option value="C">
+            <option value="C++">
+            <option value="C#">
+            <option value="Ruby">
+            <option value="SQL">
+            <option value="HTML">
+        </datalist>
+        <div class="form-group">
+          <label for="inputName" class="sr-only">Choice One</label>
+          <input type="text" id="inputName" name="name" class="form-control" placeholder="" list="datalist1" required autofocus>
+        </div>
+        <div class="form-group">
+          <label for="comment" class="sr-only">Choice Two</label>
+          <input type="text" id="comment" name="comment" class="form-control" placeholder="" list="datalist1" required autofocus>
+        </div>
+        <div class="form-group">
+            <label for="test" class="sr-only">Choice Three</label>
+            <input type="text" id="test" name="test" class="form-control" placeholder="" list="datalist1" required autofocus>
+          </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Search</button>
+      </form>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>
