@@ -4,4 +4,4 @@ Right now the project can only filter the following through [indeed](https://www
 	*Languages
 	*Software skills	
 
-enjoy!:ta-da:
+enjoy!:tada:
