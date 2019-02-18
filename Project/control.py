@@ -46,7 +46,8 @@ def result():
 					print("+1")
 					points += 1
 		job.append(points)#relevant 4
-		jobs.append(job)
+		if(job[4]!=0):
+			jobs.append(job)
 	
 	for x in range(len(jobs)-1,0,-1):
 		for y in range(x):
